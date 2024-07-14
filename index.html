@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Baltic inžinerija</a>
+
+        <nav class="navbar">
+            <a href="#about">Pagrindinis</a>
+            <a href="#two">Galerija</a>
+            <a href="#three">Kontaktai</a>
+            <a href="#four">Kita</a>
+        </nav>
+    </header>
+
+<button id="testing"><img src="/Images/pastas.svg"></button>
+<form name="mailForm" id="mailForm" action="https://formsubmit.co/balticinzinerija@gmail.com" method="POST">
+    <div id="mailTop">
+        <h1 name="mailTitle" id="mailTitle">Susisiekti su Baltic inžinerija</h1>
+    </div>
+    <h3 class="mailSubtitle">VARDAS:</h3>
+    <input type="text" name="Vardas" class="mailInputName" placeholder="Vardas" required>
+    <h3 class="mailSubtitle">ELEKTRONINIS PAŠTAS:</h3>
+    <input type="email" name="Elektroninis paštas" class="mailInputEmail" placeholder="pavyzdys@gmail.com" required>
+    <h3 class="mailSubtitle">ŽINUTĖ:</h3>
+    <textarea name="Žinutė" class="mailInputText" placeholder="Žinutė" required></textarea>
+    <br>
+
+    <button type="submit" id="mailSend">Siųsti</button>
+</form>
+
+    <div class="container">
+        <section id="about" class="section">
+            <main class="about">
+                <div class="aboutDivs">
+                    <div class="aboutTop">
+                        <h1 id="aboutTitle">Apie mus</h1>
+                    </div>
+                    <div class="aboutBottom">
+                            <img src="Images/about.jpg" id="aboutImg">
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores repellendus quod nemo pariatur molestiae obcaecati vel tempora minima, error, velit iste explicabo dignissimos labore, optio dolore aspernatur expedita porro nam.</h3>
+                    </div>
+
+                </div>
+            </main>
+        </section>
+
+        <section class="seperator"><h1>e</h1></section>
+    
+        <section id="two" class="section">
+
+            <div class="categoryDivs">
+                <div class="galleryCardsRow1">
+                    <div id="galleryCard">
+                        <div class="galleryImg">
+                            <img src="Images/santechnika.svg" class="test">
+                        </div>
+                        <div class="galleryContent">
+                            <h2 id="galleryTitle">SANTECHNIKA</h2>
+                            <h4 class="galleryDesc">Peržiūrėti santechnikos darbų galeriją</h4>
+                            <a href="/Galleries/galerija1.html" id="galleryBtn">Peržiūrėti</a>
+                        </div>
+                    </div>
+
+                    <div id="galleryCard">
+                        <div class="galleryImg">
+                            <img src="Images/elektra.svg" class="test">
+                        </div>
+                        <div class="galleryContent">
+                            <h2 id="galleryTitle">ELEKTROS INSTALIACIJA</h2>
+                            <h4 class="galleryDesc">Peržiūrėti elektros instaliacijos darbų galeriją</h4>
+                            <a href="#" id="galleryBtn">Peržiūrėti</a>
+                        </div>
+                    </div>
+
+                    <div id="galleryCard">
+                        <div class="galleryImg">
+                            <img src="Images/vedinimas.svg" class="test">
+                        </div>
+                        <div class="galleryContent">
+                            <h2 id="galleryTitle">VĖDINIMAS, VĖSINIMAS</h2>
+                            <h4 class="galleryDesc">Peržiūrėti vėdinimo, vėsinimo darbų galeriją</h4>
+                            <a href="#" id="galleryBtn">Peržiūrėti</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galleryCardsRow2">
+                    <div id="galleryCard">
+                        <div class="galleryImg">
+                            <img src="Images/sildymas.svg" class="test">
+                        </div>
+                        <div class="galleryContent">
+                            <h2 id="galleryTitle">ŠILDYMAS</h2>
+                            <h4 class="galleryDesc">Peržiūrėti šildymo darbų galeriją</h4>
+                            <a href="#" id="galleryBtn">Peržiūrėti</a>
+                        </div>
+                    </div>
+
+                    <div id="galleryCard">
+                        <div class="galleryImg">
+                            <img src="Images/laukoinzineriniaitinklai.svg" class="test">
+                        </div>
+                        <div class="galleryContent">
+                            <h2 id="galleryTitle">LAUKO INŽINERINIAI TINKLAI</h2>
+                            <h4 class="galleryDesc">Peržiūrėti lauko inžinerinių tinklų darbų galeriją</h4>
+                            <a href="#" id="galleryBtn">Peržiūrėti</a>
+                        </div>
+                    </div>
+
+                    <div id="galleryCard">
+                        <div class="galleryImg">
+                            <img src="Images/zidiniai.svg" class="test">
+                        </div>
+                        <div class="galleryContent">
+                            <h2 id="galleryTitle">ŽIDINIAI</h2>
+                            <h4 class="galleryDesc">Peržiūrėti židinių darbų galeriją</h4>
+                            <a href="#" id="galleryBtn">Peržiūrėti</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seperator"><h1>e</h1></section>
+    
+        <section id="three" class="section">
+            <main class="contact">
+                <div class="contactDivs">
+                    <div class="contactTop">
+                        <h1 id="contactTitle">Mūsų kontaktai</h1>
+                    </div>
+                    <div class="contactBottom">
+                            <img src="Images/contactbook.svg" id="contactBook">
+                            <div class="contacts">
+                                <div class="contactLine"><img src="Images/facebook.svg" class="contactIcon"><h3 class="contactText" onclick="window.open('https://www.facebook.com/balticinzinerija')">Baltic inžinerija</h3></div>
+                                <div class="contactLine"><img src="Images/call.svg" class="contactIcon"><h3 class="contactText">+37012345678</h3></div>
+                                <div class="contactLine"><img src="Images/email.svg" class="contactIcon"><h3 class="contactText">balticinzinerija@gmail.com</h3></div>
+                            </div>
+                    </div>
+
+                </div>
+            </main>
+        </section>
+
+        <section class="seperator"><h1>e</h1></section>
+    
+        <section id="four" class="section">
+            <div class="locationDivs">
+                    <div class="locationTop">
+                        <h1 id="locationTitle">Lokacija</h1>
+                    </div>
+                    <div class="locationBottom">
+                            <img src="Images/lokacija.png" id="aboutImg">
+                            <h3 id="locationText">Baltic inžinerija tiekia paslaugas Klaipėdoje ir 50km spinduliu aplink ją.</h3>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+    <button></button>
+    
+</body>
+</html>
+

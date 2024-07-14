@@ -1,0 +1,119 @@
+/* Teksto šriftų įkėlimas */
+
+@font-face {
+    font-family: "AlbertSans";
+    src: url(Fonts/AlbertSans.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(Fonts/Roboto.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(Fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: "AzeretMono";
+    src: url(Fonts/AzeretMono.ttf);
+}
+
+@font-face {
+    font-family: "NotoSerif";
+    src: url(Fonts/NotoSerif.ttf);
+}
+
+
+body {
+    font-family: "NotoSerif", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 250, 240);
+}
+
+.dishList {
+    display: flexbox;
+}
+
+.dish {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.dishName {
+    font-family: "NotoSerif", sans-serif;
+    margin: 0;
+}
+
+.popularTag {
+    opacity: 0.7;
+    margin: 0 0 15px 0;
+    background-color: rgb(247, 46, 46);
+    color: white;
+    font-family: "OpenSans", sans-serif;
+    width: 65px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.newTag {
+    opacity: 0.7;
+    margin: 0 0 15px 0;
+    background-color: rgb(247, 46, 46);
+    color: white;
+    font-family: "OpenSans", sans-serif;
+    width: 63px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.birthdayTag {
+    opacity: 0.7;
+    margin: 0 0 15px 0;
+    background-color: rgb(195, 36, 216);
+    color: white;
+    font-family: "OpenSans", sans-serif;
+    width: 103px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.dishImg {
+    height: 175px;
+    height: 175px;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+
+.dishCost {
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 3px;
+    width: 40px;
+    display: flex;
+    margin: 5px 0 0 10px;
+    font-family: "OpenSans", sans-serif;
+}
+
+.dishDesc {
+    font-family: "OpenSans", sans-serif;
+    color: #3a3a3a;
+    margin: 0 0 2px 0;
+}
+
+.dishTags {
+    display: flex;
+}
+
+.menuCategory {
+    display: flex;
+    justify-content: center;
+    font-family: "OpenSans", sans-serif;
+}
