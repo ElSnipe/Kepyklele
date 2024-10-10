@@ -1,13 +1,15 @@
+/* Fonts import into CSS file */
 @font-face {
     font-family: 'AlbertSans';
-    src: url(./Fonts/AlbertSans.ttf);
+    src: url(../Fonts/AlbertSans.ttf);
 }
 
 @font-face {
     font-family: 'LibraSerif';
-    src: url(./Fonts/LibraSerif.otf);
+    src: url(../Fonts/LibraSerif.otf);
 }
 
+/* General styling*/
 body {
     display: flex;
     flex-direction: column;
@@ -23,6 +25,15 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.title {
+    font-size: 30px;
+    margin: 40px 0 20px 0;
+    text-align: center;
+    color: #846B5F;
+}
+
+/* Header styling */
 header {
     display: flex;
     flex-direction: column;
@@ -38,6 +49,7 @@ header h1 {
     margin: 15px 0 20px 0;
 }
 
+/* Navigation bar styling */
 nav {
     display: flex;
     gap: 15px;
@@ -48,29 +60,7 @@ nav a {
     font-weight: bold;
 }
 
-.expDiv {
-    display: flex;
-}
-
-footer {
-    background-color: #abb3bf;
-}
-
-.expImg {
-    width: 300px;
-}
-
-/* Navigation bar */
-
-#menuItems {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
-}
-
+/* Menu section styling*/
 .menuDiv {
     display: flex;
     flex-direction: column;
@@ -84,7 +74,15 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Menu section */
+#menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
 .menuImg {
     width: 100%;
     height: 200px;
@@ -134,42 +132,55 @@ footer {
     color: white;
 }
 
-.expItems {
+/* Bakery description styling */
+.descDiv {
+    display: flex;
+}
+
+.descItems {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 700px;
 }
-  .expItem {
-    margin: 0 10px 20px 10px;
+
+.descItem {
     display: flex;
-    background-image: url(./Photographic/Images/Brush1.png);
+    margin-bottom: 35px;
+    background-image: url(../Photographic/Images/Brush1.png);
     background-size: 100% 100%;
     background-position: left center;
     background-repeat: no-repeat;
-    background: scaleX(-1);
     background-position: right center;
     width: 800px;
+    height: 230px;
     padding: 25px 0 0 240px;
-}
-     
-.title {
-    font-size: 30px;
-    margin: 40px 0 20px 0;
-    text-align: center;
-    color: #846B5F;
+    gap: 50px;
 }
 
-.expItem img {
+#descItem2 {
+    transform: scaleX(-1);
+}
+
+#descItem2 > * {
+    transform: scaleX(-1);
+}
+
+.descImg {
+    width: 300px;
+}
+
+.descItem img {
     width: 220px;
     height: 220px;
 }
 
-.expItem p {
+.descItem p {
     font-family: 'AlbertSans';
     font-size: 16px;
 }
 
+/* Information section styling */
 #infoDivs {
     display: flex;
     align-items: center;
@@ -194,6 +205,7 @@ footer {
     margin: 0 0 3px 0;
 }
 
+/* Scaling to apply to device screen size */
 @media (max-width: 1200px) {
     .menuDiv {
         width: calc(50% - 10px);
