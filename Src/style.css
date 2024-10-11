@@ -15,15 +15,27 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'LibraSerif';
-    /* background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('fonas.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
     min-height: 100vh;
     background-color: #E9E2D9E5;
-    margin: 0;
+    margin: 40px 0 40px 0;
     padding: 0;
+}
+
+#qrCode {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 125px;
+    margin: 0 15px 15px 0;
+    border-radius: 15px;
+}
+
+.navSelected {
+    color: white;
+    background-color: #886b60;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 450;
 }
 
 .title {
@@ -49,29 +61,25 @@ header h1 {
     margin: 15px 0 20px 0;
 }
 
-/* Navigation bar styling */
+/* Menu navigation bar styling */
 nav {
     display: flex;
     gap: 15px;
     font-size: 1.2em;
+    vertical-align: middle;
+    align-items: center;
+    height: 50px;
 }
 
 nav a {
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Menu section styling*/
-.menuDiv {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    background-color: white;
-    border-radius: 15px;
-    width: calc(25% - 13.33px);
-    /* width: calc(25% - 15px); 4 items in a row instead of 3*/
-    min-height: 350px;
-    word-break: break-word;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Menu section styling */
+#menu {
+    margin-bottom: 20px;
 }
 
 #menuItems {
@@ -81,6 +89,19 @@ nav a {
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
+}
+
+.menuDiv {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    width: 250px;
+    /* width: calc(25% - 15px); 4 items in a row instead of 3*/
+    min-height: 350px;
+    word-break: break-word;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menuImg {
@@ -105,6 +126,7 @@ nav a {
     margin: 0 0 15px 10px;
     font-size: 0.9em;
     font-family: 'AlbertSans';
+    flex-grow: 1;
 }
 
 .menuPrice {
@@ -112,6 +134,7 @@ nav a {
     font-family: 'AlbertSans';
     font-weight: bold;
     color: #424242;
+    margin-top: auto;
 }
 
 .menuBtn {
@@ -181,6 +204,10 @@ nav a {
 }
 
 /* Information section styling */
+#infoTitle {
+    margin: 0 0 10px 0;
+}
+
 #infoDivs {
     display: flex;
     align-items: center;
@@ -192,17 +219,29 @@ nav a {
     font-family: 'AlbertSans', sans-serif;
 }
 
-.infoTitle {
+.infoCity {
     font-family: 'LibraSerif', sans-serif;
     color: #846B5F;
 }
 
-#infoTitle {
-    margin: 0 0 10px 0;
-}
-
 .infoLabel, .infoPhone {
     margin: 0 0 3px 0;
+}
+
+#socialsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#socialsDiv img {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#socialsDiv img:hover {
+    transform: scale(1.1) translateY(-5px);
 }
 
 /* Scaling to apply to device screen size */
