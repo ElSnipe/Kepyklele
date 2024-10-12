@@ -30,19 +30,20 @@ body {
     border-radius: 15px;
 }
 
-.navSelected {
-    color: white;
-    background-color: #886b60;
-    padding: 10px;
-    border-radius: 30px;
-    font-weight: 450;
-}
-
 .title {
     font-size: 30px;
     margin: 40px 0 20px 0;
     text-align: center;
     color: #846B5F;
+}
+
+/* JavaScript related styling */
+.catSelected {
+    color: white;
+    background-color: #886b60;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 450;
 }
 
 /* Header styling */
@@ -80,6 +81,7 @@ nav a {
 /* Menu section styling */
 #menu {
     margin-bottom: 20px;
+    min-height: 520px;
 }
 
 #menuItems {
@@ -87,7 +89,6 @@ nav a {
     flex-wrap: wrap;
     gap: 20px;
     max-width: 1200px;
-    margin: 0 auto;
     justify-content: center;
 }
 
@@ -155,7 +156,7 @@ nav a {
     color: white;
 }
 
-/* Bakery description styling */
+/* Bakery's description styling */
 .descDiv {
     display: flex;
 }
@@ -170,7 +171,7 @@ nav a {
 .descItem {
     display: flex;
     margin-bottom: 35px;
-    background-image: url(../Photographic/Images/Brush1.png);
+    background-image: url(../Photographic/Misc/Brush1.png);
     background-size: 100% 100%;
     background-position: left center;
     background-repeat: no-repeat;
@@ -210,9 +211,6 @@ nav a {
 
 #infoDivs {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
     padding: 25px 0;
     width: 100%;
     gap: 50px;

@@ -1,32 +1,37 @@
+// Importing categories from HTML
 const navItem1 = document.getElementById('navItem1');
 const navItem2 = document.getElementById('navItem2');
 const navItem3 = document.getElementById('navItem3');
 const navItem4 = document.getElementById('navItem4');
 const navItem5 = document.getElementById('navItem5');
 const navItem6 = document.getElementById('navItem6');
+// Importing category's items from HTML
 const menuCat1 = document.getElementsByClassName('menuCat1');
 const menuCat2 = document.getElementsByClassName('menuCat2');
 const menuCat3 = document.getElementsByClassName('menuCat3');
 const menuCat4 = document.getElementsByClassName('menuCat4');
 const menuCat5 = document.getElementsByClassName('menuCat5');
 const menuTitle = document.getElementById('menuTitle');
-let selectedItem = navItem1;
+// Defining needed variables
+let selectedCat = navItem1;
 
+// Main function
 function selectCategory(event) {
     // Clearing the previously selected category
-    selectedItem.classList.remove('navSelected');
-    selectedItem = event.target;
-    selectedItem.classList.add('navSelected');
+    selectedCat.classList.remove('catSelected');
+    selectedCat = event.target;
+    selectedCat.classList.add('catSelected');
 
     menuCategory = event.target.name;
     menuTitle.textContent = menuCategory;
 
     // Hide all menu categories
-    [menuCat1, menuCat2, menuCat3, menuCat4, menuCat5].forEach(category => {
+    const menuCategories = [menuCat1, menuCat2, menuCat3, menuCat4, menuCat5];
+    menuCategories.forEach(category => {
         Array.from(category).forEach(item => item.style.display = 'none');
     });
 
-    // Show the selected category
+    // Show the items of the selected category
     if (event.target === navItem1) {
         Array.from(menuCat1).forEach(item => item.style.display = 'block');
     }
