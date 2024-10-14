@@ -138,6 +138,12 @@ nav a {
     margin-top: auto;
 }
 
+.menuBtnDiv {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
 .menuBtn {
     background: none;
     border-radius: 5px;
@@ -254,3 +260,4 @@ nav a {
         width: 100%;
     }
 }
+

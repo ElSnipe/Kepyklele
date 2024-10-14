@@ -19,10 +19,10 @@
     <!-- Section with a navigation bar of the menu. -->
     <nav>
         <a id="navItem1" class="catSelected" name="Duonos meniu" onclick="selectCategory(event)">Duona</a>
-        <a id="navItem2" name="Bandelių meniu" onclick="selectCategory(event)">Bandelės</a>
-        <a id="navItem3" name="Spurgų meniu" onclick="selectCategory(event)">Spurgos</a>
-        <a id="navItem4" name="Desertų meniu" onclick="selectCategory(event)">Desertai</a>
-        <a id="navItem5" name="Kavos meniu" onclick="selectCategory(event)">Kava</a>
+        <a id="navItem2" title="Bandelių meniu" onclick="selectCategory(event)">Bandelės</a>
+        <a id="navItem3" title="Spurgų meniu" onclick="selectCategory(event)">Spurgos</a>
+        <a id="navItem4" title="Desertų meniu" onclick="selectCategory(event)">Desertai</a>
+        <a id="navItem5" title="Kavos meniu" onclick="selectCategory(event)">Kava</a>
     </nav>
 
     <!-- Menu section. -->
@@ -35,7 +35,9 @@
                 <h2 class="menuName">Bananinė duona</h2>
                 <p class="menuDesc">Gardi duona su bananais. Ši duona yra skirta tiems kurie nori išbandyti ko nors naujo.</p>
                 <p class="menuPrice">2.49€</p>
-                <button class="menuBtn">Mygtukas</button>
+                <div class="menuBtnDiv">
+                    <button class="menuBtn">Mygtukas</button>
+                </div>
             </div>
             <div class="menuDiv menuCat1">
                 <img src="../Photographic/Menu/Bread/Whole-grain-bread.jpg" class="menuImg" alt="Pilno grūdo duona">
